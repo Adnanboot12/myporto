@@ -1,7 +1,8 @@
 var audio = new Audio('assets/sentmessage.mp3');
-var contactString = "<div class='social'> <a target='_blank' href='tel:+918600765857'> <div class='socialItem' id='call'><img class='socialItemI' src='images/phone.svg'/><label class='number'>8600765857</label></div> </a> <a href='mailto:patilvinu777@gmail.com'> <div class='socialItem'><img class='socialItemI' src='images/gmail.svg' alt=''></div> </a> <a target='_blank' href='https://github.com/Vinayak-09'> <div class='socialItem'><img class='socialItemI' src='images/github.svg' alt=''></div> </a> <a target='_blank' href='https://wa.me/918600765857'> <div class='socialItem'><img class='socialItemI' src='images/whatsapp.svg' alt=''></div> </a> <a target='_blank' href='https://t.me/vinayak_09'> <div class='socialItem'><img class='socialItemI' src='images/telegram.svg' alt=''></div> </a> <a target='_blank' href='https://instagram.com/vinayak_patil_09'> <div class='socialItem'><img class='socialItemI' src='images/instagram.svg' alt=''> </div> </a> <a href='https://www.linkedin.com/in/vinayak-patil-793bb5206/' target='_blank' rel='noopener noreferrer'> <div class='socialItem'><img class='socialItemI' src='images/linkedin.svg' alt=''></div> </a> </div>";
+var lagu = new Audio('assets/audio.mp3');
+var contactString = "<div class='social'> <a target='_blank' href='tel:+6283198177108'> <div class='socialItem' id='call'><img class='socialItemI' src='images/phone.svg'/><label class='number'>083198177108</label></div> </a> <a href='mailto:donihungkul14@gmail.com'> <div class='socialItem'><img class='socialItemI' src='images/gmail.svg' alt=''></div> </a> <a target='_blank' href='https://github.com/Adnanboot12'> <div class='socialItem'><img class='socialItemI' src='images/github.svg' alt=''></div> </a> <a target='_blank' href='https://wa.me/6283198177108'> <div class='socialItem'><img class='socialItemI' src='images/whatsapp.svg' alt=''></div> </a> <a target='_blank' href='https://t.me/Nnuuuyyyy18'> <div class='socialItem'><img class='socialItemI' src='images/telegram.svg' alt=''></div> </a> <a target='_blank' href='https://instagram.com/Adnanboot_nt'> <div class='socialItem'><img class='socialItemI' src='images/instagram.svg' alt=''> </div> </a> <a href='https://www.linkedin.com/in//' target='_blank' rel='noopener noreferrer'> <div class='socialItem'><img class='socialItemI' src='images/linkedin.svg' alt=''></div> </a> </div>";
 var resumeString = "<img src='images/resumeThumbnail.png' class='resumeThumbnail'><div class='downloadSpace'><div class='pdfname'><img src='images/pdf.png'><label>Vinayak Resume.pdf</label></div><a href='assets/Vinayak Patil&#39;s Resume.pdf' download='Vinayak_Patil_Resume.pdf'><img class='download' src='images/downloadIcon.svg'></a></div>";
-var addressString = "<div class='mapview'><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238.63833262443757!2d74.19014864534314!3d16.865338763272877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1a7dcf40f5dd7%3A0xd7b69fe1fcfa9877!2zMTbCsDUxJzU1LjQiTiA3NMKwMTEnMjUuMyJF!5e0!3m2!1sen!2sin!4v1645079906766!5m2!1sen!2sin' class='map'></iframe></div><label class='add'><address>B2 'Asara'<br>Kodoli<br>Kolhapur, Maharashtra, INDIA 416114</address>";
+var addressString = "<div class='mapview'><iframe src='https://maps.app.goo.gl/RqXKSqHu5sEvL1cs7' class='map'></iframe></div><label class='add'><address>B2 'Pangandaran'<br>Kab<br>Pangandaran, Jawa Barat, Indonesia</address>";
 function startFunction() {
     setLastSeen();
     waitAndResponce("intro");
@@ -67,26 +68,25 @@ function sendMsg() {
 }
 
 function waitAndResponce(inputText) {
-    var lastSeen = document.getElementById("lastseen");
-    lastSeen.innerText = "typing...";
+   lastSeen.innerText = "menulis...";
     switch (inputText.toLowerCase().trim()) {
         case "intro":
             setTimeout(() => {
-                sendTextMessage("Hello there 👋🏻,<br><br>My name is <span class='bold'><a class='alink'>Vinayak Ramchandra Patil</a>.</span><br><br>I am a Computer Engineering student at <span class='bold'>Ch. Shivaji University 👨🏻‍💻📚</span><br><br>I am eager to hear about potential career opportunities, so I would be pleased to chat about job openings in the engineering sphere.<br><br>Send <span class='bold'>'help'</span> to know more about me.<br>");
+                sendTextMessage("Hello  👋🏻,<br><br>My name is <span class='bold'><a class='alink'>Adnanboot</a>.</span><br><br>Saya bisa membantu anda<span class='bold'>Dari Penipu</span><br><br>Saya bisa membantu anda dengan Jasa saya dengan Jasa Rekber saya,Tidak Cuman Jasa Rekber saya juga bisa membantu anda jiga anda tertipu.<br><br>Ketik <span class='bold'>'help'</span> Untuk melihat tentang saya.<br>");
             }, 2000);
             break;
         case "help":
-            sendTextMessage("<span class='sk'>Send Keyword to get what you want to know about me...<br>e.g<br><span class='bold'>'skills'</span> - to know my skills<br><span class='bold'>'resume'</span> - to get my resume<br><span class='bold'>'education'</span> - to get my education details<br><span class='bold'>'address'</span> - to get my address<br><span class='bold'>'contact'</span> - to get ways to connect with me<br><span class='bold'>'projects'</span> - to get details of my projects<br><span class='bold'>'clear'</span> - to clear conversation<br><span class='bold'>'about'</span> - to know about this site</span>");
+            sendTextMessage("<span class='sk'>Kirim Kata Kunci untuk mendapatkan apa yang ingin Anda ketahui tentang saya...<br>Misalnya<br><span class='bold'>'skills'</span> - untuk mengetahui Skills saya<br><span class='bold'>'resume'</span> - untuk mendapatkan resume saya<br><span class='bold'>'education'</span> - untuk mendapatkan detail pendidikan saya<br><span class='bold'>'address'</span> - untuk mendapatkan alamat saya<br><span class='bold'>'contact'</span> - untuk mendapatkan contacts dengan saya<br><span class='bold'>'projects'</span> - untuk mendapatkan detail proyek saya<br><span class='bold'>'clear'</span> -untuk memperjelas percakapan<br><span class='bold'>'about'</span> - untuk mengetahui tentang situs ini</span>");
             break;
         case "resume":
             sendTextMessage(resumeString);
             break;
         case "skills":
-            sendTextMessage("<span class='sk'>I am currently pursuing B.Tech degree in Computer Science Engineering.<br><br>I can comfortably write code in following languages :<br><span class='bold'>Java<br>C++<br>C<br>PHP<br>Kotlin<br>Dart<br>Python<br>CSS<br>HTML</span><br><br>I've experiance with following frameworks :<span class='bold'><br>Android<br>Flutter<br>ReactJs<br>GTK</span><br><br>I use <span class='bold'>Arch Linux</span> as daily driver on my HP Pavilion 15-ec0xxx<br>OS:Arch Linux<br>DE:Gnome(More often) Kde(often)<br>Favourite IDE:VSCode</span>");
+            sendTextMessage("<span class='sk'>Saat ini saya masih pemula mas.<br><br>Saya dapat dengan nyaman menulis kode dalam bahasa berikut:<br><span class='bold'>Java<br>C++<br>C<br>PHP<br>Kotlin<br>Dart<br>Python<br>CSS<br>HTML</span><br><br>I've experiance with following frameworks :<span class='bold'><br>Android<br>SQL<br>Metasploit<br>NMAP</span><br><br>saya Mengunakan <span class='bold'>KALI LINUX</span> sebagai driver harian di HP<br>KALI LINUX<br>DE:Gnome(More often) Kde(often)<br>Favourite IDE:VSCode</span>");
             break;
 
         case "education":
-            sendTextMessage("I am currently pusuing B.Tech degree in Computer Science Engineering from TKIET Kolhapur<br>Passing Year : 2023<br><br>I have completed my Diploma from Government Polytechnic Karad<br>Passing Year:2020<br>Result:86.06%<br><br>I have completed my Secondary school from local school known as SWV<br>Passing Year:2016");
+            sendTextMessage("CIEE KEPO");
             break;
 
         case "address":
@@ -102,14 +102,14 @@ function waitAndResponce(inputText) {
             sendTextMessage(contactString);
             break;
         case "projects":
-            sendTextMessage("You want to check my projects? Then just jump into my Github Account.<br><br><div class='social'><a target='_blank' href='https://github.com/Vinayak-09'> <div class='socialItem'><img class='socialItemI' src='images/github.svg' alt=''></div> </a></div>");
+            sendTextMessage("Anda bisa melihat projects saya di github saya.<br><br><div class='social'><a target='_blank' href='https://github.com/Adnanboot12'> <div class='socialItem'><img class='socialItemI' src='images/github.svg' alt=''></div> </a></div>");
             break;
         case "new":
             sendTextMessage(addressString);
             break;
         default:
             setTimeout(() => {
-                sendTextMessage("Hey I couldn't catch you...😢<br>Send 'help' to know more about usage.");
+                sendTextMessage("Hei, aku tidak bisa menanggapin kamu...😢<br>kirim 'help' untuk mengetahui lebih banyak tentang penggunaan..");
             }, 2000);
             break;
     }
@@ -171,4 +171,5 @@ function sendResponse() {
 
 function playSound() {
     audio.play();
-}
+    }
+                                    
