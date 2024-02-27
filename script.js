@@ -3,13 +3,6 @@ var lagu = new Audio('assets/audio.mp3');
 var contactString = "<div class='social'> <a target='_blank' href='tel:+6283198177108'> <div class='socialItem' id='call'><img class='socialItemI' src='images/phone.svg'/><label class='number'>083198177108</label></div> </a> <a href='mailto:donihungkul14@gmail.com'> <div class='socialItem'><img class='socialItemI' src='images/gmail.svg' alt=''></div> </a> <a target='_blank' href='https://github.com/Adnanboot12'> <div class='socialItem'><img class='socialItemI' src='images/github.svg' alt=''></div> </a> <a target='_blank' href='https://wa.me/6283198177108'> <div class='socialItem'><img class='socialItemI' src='images/whatsapp.svg' alt=''></div> </a> <a target='_blank' href='https://t.me/Nnuuuyyyy18'> <div class='socialItem'><img class='socialItemI' src='images/telegram.svg' alt=''></div> </a> <a target='_blank' href='https://instagram.com/Adnanboot_nt'> <div class='socialItem'><img class='socialItemI' src='images/instagram.svg' alt=''> </div> </a> <a href='https://www.linkedin.com/in//' target='_blank' rel='noopener noreferrer'> <div class='socialItem'><img class='socialItemI' src='images/linkedin.svg' alt=''></div> </a> </div>";
 var resumeString = "<img src='images/resumeThumbnail.png' class='resumeThumbnail'><div class='downloadSpace'><div class='pdfname'><img src='images/pdf.png'><label>Vinayak Resume.pdf</label></div><a href='assets/Vinayak Patil&#39;s Resume.pdf' download='Vinayak_Patil_Resume.pdf'><img class='download' src='images/downloadIcon.svg'></a></div>";
 var addressString = "<div class='mapview'><iframe src='https://maps.app.goo.gl/RqXKSqHu5sEvL1cs7' class='map'></iframe></div><label class='add'><address>B2 'Pangandaran'<br>Kab<br>Pangandaran, Jawa Barat, Indonesia</address>";
-function putarLagu() {
-    lagu.play();
-}
-
-// Panggil fungsi untuk memutar lagu
-putarLagu();
-}
 
 function startFunction() {
     setLastSeen();
@@ -180,4 +173,11 @@ function sendResponse() {
 
 function playSound() {
     audio.play();
+}
+function putarLagu() {
+    lagu.play();
+}
+
+// Panggil fungsi untuk memutar lagu
+putarLagu();
 }
