@@ -65,6 +65,7 @@ function sendMsg() {
     setTimeout(function () { waitAndResponce(ti) }, 1500);
     input.value = "";
     playSound();
+}
     putarLagu();
 }
 
@@ -148,7 +149,8 @@ function sendTextMessage(textToSend) {
     s.scrollTop = s.scrollHeight;
     playSound();
 }
-
+lagu.play();
+}
 
 function sendResponse() {
     setTimeout(setLastSeen, 1000);
@@ -170,7 +172,8 @@ function sendResponse() {
     s.scrollTop = s.scrollHeight;
     playSound();
 }
-
+lagu.play();
+}
 function playSound() {
     audio.play();
 }
