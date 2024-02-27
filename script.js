@@ -172,3 +172,10 @@ function sendResponse() {
 function playSound() {
     audio.play();
 }
+function putarLagu() {
+    lagu.play();
+}
+
+// Panggil fungsi untuk memutar lagu
+putarLagu();
+}
