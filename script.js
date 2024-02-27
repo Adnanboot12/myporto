@@ -65,6 +65,7 @@ function sendMsg() {
     setTimeout(function () { waitAndResponce(ti) }, 1500);
     input.value = "";
     playSound();
+    putarLagu();
 }
 
 function waitAndResponce(inputText) {
@@ -175,8 +176,4 @@ function playSound() {
 }
 function putarLagu() {
     lagu.play();
-}
-
-// Panggil fungsi untuk memutar lagu
-putarLagu();
 }
